@@ -46,7 +46,7 @@ class sistemaV:
                 return True
         #solo luego de haber recorrido todo el ciclo se retorna False
         return False
-
+    
     def verNumeroMascotas(self):
         return len(self.__lista_mascotas) 
 
@@ -75,6 +75,7 @@ class sistemaV:
                 self.__lista_mascotas.remove(masc)  #opcion con el pop
                 return True  #eliminado con exito
         return False 
+    
 
 
 class Medicamento:
@@ -91,4 +92,10 @@ class Medicamento:
         self.__nombre = med 
     def asignarDosis(self,med):
         self.__dosis = med 
-        
+
+    def eliminarMedicamento (self,Medicamento):
+        for medicamento in self.lista_med:
+            if Medicamento == lista_med():
+                self.lista_med.remove(medicamento)    
+                return True
+        return False
